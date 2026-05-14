@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import { Menu, X, Play, ArrowRight, Film, Camera, Clapperboard, Palette, Mail, MapPin, Phone, Sparkles, Award, Clock } from 'lucide-react'
+import { Menu, X, Play, ArrowRight, Film, Camera, Clapperboard, Palette, Mail, MapPin, Phone, Sparkles, Award, Clock, Star } from 'lucide-react'
 import { useScroll, motion, useInView, AnimatePresence } from 'motion/react'
 import { ContactForm } from '@/components/ui/contact-form'
 import { PortfolioGallery } from '@/components/blocks/portfolio-gallery'
