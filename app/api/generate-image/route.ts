@@ -25,7 +25,8 @@ export async function POST(request: Request) {
       style: 'vivid',
     })
 
-    const imageUrl = response.data?.[0]?.url || ''
+    const firstImage = response.data?.[0]
+    const imageUrl = firstImage?.url ?? ''
 
     if (key) {
       imageCache.set(key, imageUrl)
