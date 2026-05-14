@@ -34,18 +34,18 @@ export function PortfolioGallery({
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' })
 
   const defaultImages = [
-    { src: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&q=80', alt: 'Film Production' },
-    { src: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop&q=80', alt: 'Photography Session' },
-    { src: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&h=600&fit=crop&q=80', alt: 'Commercial Shoot' },
-    { src: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=600&fit=crop&q=80', alt: 'Camera Equipment' },
-    { src: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop&q=80', alt: 'Event Coverage' },
-    { src: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop&q=80', alt: 'Behind the Scenes' },
-    { src: 'https://images.unsplash.com/photo-1535016120720-40c646be5520?w=800&h=600&fit=crop&q=80', alt: 'Studio Setup' },
-    { src: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop&q=80', alt: 'Cinematic Scene' },
-    { src: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&h=600&fit=crop&q=80', alt: 'Color Grading' },
-    { src: 'https://images.unsplash.com/photo-1524712245354-73ad03ade66c?w=800&h=600&fit=crop&q=80', alt: 'Creative Direction' },
-    { src: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&h=600&fit=crop&q=80', alt: 'Sound Design' },
-    { src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop&q=80', alt: 'Brand Identity' },
+    { src: '/images/generated/portfolio-01-1778789646453.png', alt: 'Film Production' },
+    { src: '/images/generated/portfolio-02-1778789665020.png', alt: 'Photography Session' },
+    { src: '/images/generated/portfolio-03-1778789683588.png', alt: 'Commercial Shoot' },
+    { src: '/images/generated/portfolio-04-1778789706177.png', alt: 'Camera Equipment' },
+    { src: '/images/generated/portfolio-05-1778789728451.png', alt: 'Event Coverage' },
+    { src: '/images/generated/portfolio-06-1778789746392.png', alt: 'Behind the Scenes' },
+    { src: '/images/generated/portfolio-07-1778789773247.png', alt: 'Studio Setup' },
+    { src: '/images/generated/portfolio-08-1778789794076.png', alt: 'Cinematic Scene' },
+    { src: '/images/generated/portfolio-09-1778789821300.png', alt: 'Color Grading' },
+    { src: '/images/generated/portfolio-10-1778789844556.png', alt: 'Creative Direction' },
+    { src: '/images/generated/portfolio-11-1778789864904.png', alt: 'Sound Design' },
+    { src: '/images/generated/portfolio-12-1778789885535.png', alt: 'Brand Identity' },
   ]
 
   const images = customImages || defaultImages

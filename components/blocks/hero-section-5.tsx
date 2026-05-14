@@ -256,35 +256,35 @@ const MarqueeSection = () => {
 const services = [
   {
     title: 'Video Production',
-    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-video-production-1778789242343.png',
   },
   {
     title: 'Photography',
-    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-photography-1778789269694.png',
   },
   {
     title: 'Commercials',
-    image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-commercials-1778789293804.png',
   },
   {
     title: 'Brand Identity',
-    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-brand-identity-1778789317364.png',
   },
   {
     title: 'Motion Design',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-motion-design-1778789340096.png',
   },
   {
     title: 'Color Grading',
-    image: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-color-grading-1778789367679.png',
   },
   {
     title: 'Sound Design',
-    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-sound-design-1778789391292.png',
   },
   {
     title: 'Creative Direction',
-    image: 'https://images.unsplash.com/photo-1524712245354-73ad03ade66c?w=800&h=600&fit=crop&q=80',
+    image: '/images/generated/service-creative-direction-1778789412935.png',
   },
 ]
 
@@ -590,7 +590,7 @@ const ImageBanner = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&h=800&fit=crop&q=80"
+              src="/images/generated/banner-featured-1778789435291.png"
               alt="Behind the scenes photography session"
               className="size-full object-cover"
               loading="lazy"
@@ -611,7 +611,7 @@ const ImageBanner = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop&q=80"
+                src="/images/generated/banner-production-1778789456874.png"
                 alt="Film production set"
                 className="size-full object-cover"
                 loading="lazy"
@@ -629,7 +629,7 @@ const ImageBanner = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&h=400&fit=crop&q=80"
+                src="/images/generated/banner-commercial-1778789478000.png"
                 alt="Commercial filming"
                 className="size-full object-cover"
                 loading="lazy"
@@ -784,12 +784,12 @@ const ImageGrid = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const images = [
-    { src: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=800&fit=crop&q=80', alt: 'Camera equipment' },
-    { src: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop&q=80', alt: 'Event coverage' },
-    { src: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&h=400&fit=crop&q=80', alt: 'Behind the scenes' },
-    { src: 'https://images.unsplash.com/photo-1535016120720-40c646be5520?w=600&h=800&fit=crop&q=80', alt: 'Studio setup' },
-    { src: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=400&fit=crop&q=80', alt: 'Cinematic scene' },
-    { src: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=600&h=400&fit=crop&q=80', alt: 'Color grading' },
+    { src: '/images/generated/grid-camera-equipment-1778789506103.png', alt: 'Camera equipment' },
+    { src: '/images/generated/grid-event-coverage-1778789534067.png', alt: 'Event coverage' },
+    { src: '/images/generated/grid-behind-scenes-1778789553721.png', alt: 'Behind the scenes' },
+    { src: '/images/generated/grid-studio-setup-1778789574730.png', alt: 'Studio setup' },
+    { src: '/images/generated/grid-cinematic-scene-1778789594140.png', alt: 'Cinematic scene' },
+    { src: '/images/generated/grid-color-grading-1778789614429.png', alt: 'Color grading' },
   ]
 
   return (
