@@ -6,6 +6,7 @@ import { Send, CheckCircle } from 'lucide-react'
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = React.useState(false)
   const [isSubmitted, setIsSubmitted] = React.useState(false)
+  const [submitError, setSubmitError] = React.useState(false)
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -17,6 +18,7 @@ export function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
 
+    setSubmitError(false)
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -29,8 +31,8 @@ export function ContactForm() {
       setIsSubmitted(true)
       setFormData({ name: '', email: '', service: '', message: '' })
       setTimeout(() => setIsSubmitted(false), 5000)
-    } catch (error) {
-      console.error('Error submitting form:', error)
+    } catch {
+      setSubmitError(true)
     } finally {
       setIsSubmitting(false)
     }
@@ -57,6 +59,16 @@ export function ContactForm() {
         >
           <CheckCircle className="size-5 text-primary flex-shrink-0" />
           <p className="text-sm text-primary">Message sent successfully! We'll get back to you within 24 hours.</p>
+        </motion.div>
+      )}
+
+      {submitError && (
+        <motion.div
+          className="p-4 rounded-lg bg-destructive/10 border border-destructive/20 flex items-center gap-3"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <p className="text-sm text-destructive">Something went wrong. Please try again or email us directly.</p>
         </motion.div>
       )}
 
