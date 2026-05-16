@@ -297,7 +297,7 @@ const ServicesSection = () => {
     <section
       id="services"
       ref={ref}
-      className="relative min-h-screen py-20 px-4"
+      className="relative py-20 px-4"
     >
       <div className="max-w-7xl mx-auto bg-secondary/20 backdrop-blur-sm rounded-2xl border border-white/5 overflow-hidden">
         <div className="relative z-10 text-center pt-16 pb-8 px-8">
@@ -443,7 +443,7 @@ const ProcessSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section ref={ref} className="py-32 md:py-40 bg-secondary/20">
+    <section ref={ref} className="py-16 md:py-20 bg-secondary/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div
           className="text-center mb-20"
@@ -502,7 +502,7 @@ const ShowreelSection = () => {
   }
 
   return (
-    <section id="showreel" ref={ref} className="py-32 md:py-40">
+    <section id="showreel" ref={ref} className="py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16"
